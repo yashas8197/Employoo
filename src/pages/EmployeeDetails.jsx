@@ -1,5 +1,4 @@
 import { useParams } from "react-router-dom";
-import Header from "../components/Header";
 
 const EmployeeDetails = () => {
   const { employeeId } = useParams();
@@ -29,7 +28,6 @@ const EmployeeDetails = () => {
   );
   return (
     <>
-      <Header />
       <div className="container my-4">
         <h3>{employeeData.name}</h3>
         <ul className="list-group">
